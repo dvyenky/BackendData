@@ -13,7 +13,7 @@ app.get("/data", (req, res) => {
       console.error("Error reading file:", err);
       res.status(500).json({ error: "Internal server error" });
     } else {
-      res.json(data.data); // Assuming your JSON structure has a 'data' property
+      res.json(data.data);
     }
   });
 });
